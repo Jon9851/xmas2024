@@ -45,16 +45,52 @@
     span {
       color: #FFD700;
     }
+
+    /* Media Queries */
+    @media (max-width: 768px) { /* Tablet and small devices */
+      h1 {
+        font-size: 2rem; /* Reduce font size */
+      }
+      p {
+        font-size: 1.2rem; /* Adjust paragraph size */
+      }
+      a {
+        font-size: 1rem; /* Adjust button font size */
+        padding: 8px 16px; /* Reduce button padding */
+      }
+      video {
+        max-width: 90%; /* Allow the video to take more space */
+      }
+    }
+
+    @media (max-width: 480px) { /* Mobile devices */
+      h1 {
+        font-size: 1.5rem; /* Further reduce font size */
+      }
+      p {
+        font-size: 1rem; /* Smaller paragraph text */
+      }
+      a {
+        font-size: 0.9rem; /* Smaller button text */
+        padding: 6px 12px; /* Smaller button padding */
+      }
+      video {
+        max-width: 100%; /* Video takes full width */
+      }
+      body {
+        padding: 10px; /* Reduce body padding for small screens */
+      }
+    }
   </style>
 </head>
 <body>
-  <h1>Merry <Span>Christmas!</Span> 🎄</h1>
+  <h1>Merry <span>Christmas!</span> 🎄</h1>
 
   <!-- Video Player -->
   <video controls>
     <source src="video/clideo_editor_b6f4f0a7b51747cc8c96a597a250f914.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
-  <H1>And A Happy <span>New Year</span>🍾</H1>
+  <h1>And A Happy <span>New Year</span> 🍾</h1>
 </body>
 </html>
